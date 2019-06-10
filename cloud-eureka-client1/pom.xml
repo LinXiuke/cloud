@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>pers.hogwarts</groupId>
-    <artifactId>cloud-eureka-client</artifactId>
+    <artifactId>cloud-eureka-client1</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>cloud-eureka-client</name>
+    <name>cloud-eureka-client1</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
