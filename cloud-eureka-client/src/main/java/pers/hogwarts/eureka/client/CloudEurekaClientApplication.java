@@ -21,8 +21,8 @@ public class CloudEurekaClientApplication {
     @Value("${server.port}")
     String port;
 
-    @RequestMapping("/hi")
+    @RequestMapping("/hello")
     public String home(@RequestParam String name) {
-        return "hi "+name+",i am from port:" +port;
+        return "hello "+name+",i am from port:" +port;
     }
 }

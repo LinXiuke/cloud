@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 import pers.hogwarts.server.ribbon.service.HelloService;
 
 @RestController
-public class HiController {
+public class HelloController {
 
     @Autowired
     private HelloService helloService;
 
 
-    @RequestMapping(value = "/hi")
+    @RequestMapping(value = "/hello")
     public String hi(@RequestParam String name){
         return helloService.hi(name);
     }

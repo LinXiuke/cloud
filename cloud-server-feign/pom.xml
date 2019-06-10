@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>pers.hogwarts</groupId>
-    <artifactId>cloud-server-ribbon</artifactId>
+    <artifactId>cloud-server-feign</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>cloud-server-ribbon</name>
+    <name>cloud-server-feign</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -26,7 +26,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
             <version>RELEASE</version>
         </dependency>
         <dependency>
