@@ -14,6 +14,6 @@ public class HelloServiceImpl implements HelloService {
 
     @Override
     public String hi(String name) {
-        return restTemplate.getForObject("http://SERVICE-HI/hello?name="+name,String.class);
+        return restTemplate.getForObject("http://service-hello/hello?name="+name,String.class);
     }
 }
