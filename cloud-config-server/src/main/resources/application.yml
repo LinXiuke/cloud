@@ -1,0 +1,16 @@
+server:
+  port: 8768
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      # 远程仓库分支
+      label: master
+      server:
+        git:
+          searchPaths:  # 配置仓库路径   respo
+          uri: https://github.com/LinXiuke/cloud/
+          # 公开仓库不需要账号密码
+          username:
+          password:
