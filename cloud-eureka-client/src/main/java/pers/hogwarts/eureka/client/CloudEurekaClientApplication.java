@@ -30,7 +30,7 @@ public class CloudEurekaClientApplication {
 
     @RequestMapping("/hello")
     @HystrixCommand(fallbackMethod = "hiError")
-    public String home(@RequestParam String name) {
+    public String hello(@RequestParam String name) {
         return "hello "+name+",i am from port:" +port;
     }
 

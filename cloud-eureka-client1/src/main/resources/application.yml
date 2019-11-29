@@ -7,3 +7,10 @@ server:
 spring:
   application:
     name: service-hello
+
+# hystrix dashboard
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
