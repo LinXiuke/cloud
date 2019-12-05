@@ -1,0 +1,24 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true   # 为true会开启 service-hello 路由  通过 localhost:8081/service-hello/** 也能访问
+          lowerCaseServiceId: true  # 注册到Eureka会服务名变成大写，开启小写
+      routes:
+      - id: service-hello
+        uri: lb://SERVICE-HELLO
+        predicates:
+        - Path=/sh/**
+        filters:
+        - StripPrefix=1
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
